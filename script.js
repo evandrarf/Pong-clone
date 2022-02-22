@@ -31,6 +31,9 @@ document.addEventListener("mousemove", (e) => {
 document.addEventListener("touchmove", (e) => {
   playerPaddle.position = (e.y / window.innerHeight) * 100;
 });
+document.addEventListener("drag", (e) => {
+  playerPaddle.position = (e.y / window.innerHeight) * 100;
+});
 
 function handleLose() {
   const rect = ball.rect();
