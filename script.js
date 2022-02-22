@@ -28,6 +28,9 @@ function update(time) {
 document.addEventListener("mousemove", (e) => {
   playerPaddle.position = (e.y / window.innerHeight) * 100;
 });
+document.addEventListener("touchmove", (e) => {
+  playerPaddle.position = (e.y / window.innerHeight) * 100;
+});
 
 function handleLose() {
   const rect = ball.rect();
